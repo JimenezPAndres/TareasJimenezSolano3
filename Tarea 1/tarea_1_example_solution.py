@@ -1,5 +1,5 @@
 # La función recibe como parámetro a "string", luego se verifica que el
-# parámetro se un string, sea alfabético y que no sea un espacio vacío.
+#parámetro se un string, sea alfabético y que no sea un espacio vacío.
 # Luego se revisa el estado de cada caractér (mayúscula/minúsucla) y se va
 # agreagando el mismo caractér con el estado inverso en "finalstring".
 
@@ -36,7 +36,7 @@ def numero_primo(base):
     if not isinstance(base, int):
         return -64, None
     if isinstance(base, bool):
-        return -64, None
+        return -64 , None
     if base > 100:
         return -80, None
     for i in range(base, 1, -1):
@@ -51,3 +51,6 @@ def numero_primo(base):
         if i in primos:
             primos.remove(i)
     return 0, primos
+
+
+
